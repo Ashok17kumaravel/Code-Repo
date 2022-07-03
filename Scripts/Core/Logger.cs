@@ -38,7 +38,6 @@ public class Logger : Singleton<Logger>
     public void LogInfo(string message)
     {
         ClearLines();
-
         debugAreaText.text += $"<color=\"green\">{DateTime.Now.ToString("HH:mm:ss.fff")} {message}</color>\n";
     }
 
